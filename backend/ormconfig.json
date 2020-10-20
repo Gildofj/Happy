@@ -1,6 +1,11 @@
 {
-    "type": "sqlite",
-    "database": "./src/database/database.sqlite",
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "database": "happy",
+  "username": "postgres",
+  "password": "123456",
+  "synchronize": true,
     "migrations": [
         "./src/database/migrations/*.ts"
     ],

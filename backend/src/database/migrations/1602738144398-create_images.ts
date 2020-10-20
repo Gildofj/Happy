@@ -21,6 +21,7 @@ export class createImages1602738144398 implements MigrationInterface {
 					{
 						name: 'orphanage_id',
 						type: 'integer',
+						isUnique: true,
 					},
 				],
 				foreignKeys: [

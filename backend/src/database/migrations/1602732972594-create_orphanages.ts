@@ -9,6 +9,7 @@ export class createOrphanages1602732972594 implements MigrationInterface {
 					{
 						name: 'id',
 						type: 'integer',
+						isUnique: true,
 						unsigned: true,
 						isPrimary: true,
 						isGenerated: true,
@@ -21,14 +22,14 @@ export class createOrphanages1602732972594 implements MigrationInterface {
 					{
 						name: 'latitude',
 						type: 'decimal',
-						scale: 10,
 						precision: 2,
+						scale: 10,
 					},
 					{
 						name: 'longitude',
 						type: 'decimal',
-						scale: 10,
 						precision: 2,
+						scale: 10,
 					},
 					{
 						name: 'about',

@@ -7,9 +7,9 @@ export default class Orphanage {
 
 	@Column() name: string;
 
-	@Column() latitude: number;
+	@Column('double precision') latitude: number;
 
-	@Column() longitude: number;
+	@Column('double precision') longitude: number;
 
 	@Column() about: string;
 

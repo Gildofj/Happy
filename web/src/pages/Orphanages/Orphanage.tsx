@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
 import { FiClock, FiInfo } from 'react-icons/fi';
 import { Map, Marker, TileLayer } from 'react-leaflet';
 import { useParams } from 'react-router-dom';
 
-import mapIcon from '../utils/mapIcon';
-import Sidebar from '../components/Sidebar';
+import mapIcon from '../../utils/mapIcon';
+import Sidebar from '../../components/Sidebar';
 
-import '../styles/pages/orphanage.css';
-import api from '../services/api';
+import '../../styles/pages/orphanages/orphanage.css';
+import api from '../../services/api';
 
 interface Orphanage {
 	latitude: number;
@@ -93,6 +92,7 @@ export default function Orphanage () {
 
 							<footer>
 								<a
+									/* eslint-disable-next-line */
 									target="_blank"
 									rel="noonpener noreferrer"
 									href={`https://www.google.com/maps/dir/?api=1&destination=${orphanage.latitude},${orphanage.longitude}`}

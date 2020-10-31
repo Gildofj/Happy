@@ -3,11 +3,11 @@ import { FiArrowRight, FiPlus } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 
-import '../styles/pages/orphanages-map.css';
+import '../../styles/pages/orphanages/orphanages-map.css';
 
-import mapMarkerImg from '../images/map-marker.svg';
-import mapIcon from '../utils/mapIcon';
-import api from '../services/api';
+import mapMarkerImg from '../../images/map-marker.svg';
+import mapIcon from '../../utils/mapIcon';
+import api from '../../services/api';
 
 interface Orphanage {
 	id: number;

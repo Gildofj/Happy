@@ -1,0 +1,112 @@
+#page-login {
+    width: 100vw;
+    height: 100vh;
+
+    background: #F5F8FA;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-login main {
+    flex: 1;
+}
+
+#page-login .go-back-button {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    right: 40px;
+    top: 40px;
+
+    border: 0;
+    border-radius: 16px;
+
+    background: #EBF2F5;
+     
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+form.user-form {
+    align-items: center;
+    text-align: center;
+}
+
+form.user-form legend {
+    width: 100%;
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 34px;
+
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+
+    color: #5C8599
+}
+
+form.user-form .input-block + .input-block {
+    margin-top: 46px;
+}
+
+form.user-form .input-block label {
+    display: flex;
+    color: #8FA7B3;
+    margin-bottom: 8px;
+    line-height: 24px;
+    margin-left: 20%;
+}
+
+form.user-form .input-block input {
+    width: 360px;
+    height: 64px;
+
+    background: #F5F8FA;
+
+    border: 1px solid #D3E2E5;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+form.user-form .input-block input:focus {
+    outline: none;
+}
+
+form.user-form button.confirm-button {
+  margin-top: 64px;
+  margin-left: 20%;
+
+  width: 360px;
+  height: 64px;
+  border: 0;
+  cursor: pointer;
+  background: #3CDC8C;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-weight: 800;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+}
+
+form.user-form button.confirm-button svg {
+  margin-right: 16px;
+}
+
+form.user-form button.confirm-button:hover {
+  background: #36CF82;
+}
+
+form.user-form button.confirm-button:disabled {
+    opacity: 0.5;
+}

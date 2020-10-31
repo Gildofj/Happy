@@ -4,11 +4,11 @@ import { LeafletMouseEvent } from 'leaflet';
 import { FiPlus } from 'react-icons/fi';
 import { useHistory } from 'react-router-dom';
 
-import mapIcon from '../utils/mapIcon';
-import Sidebar from '../components/Sidebar';
+import mapIcon from '../../utils/mapIcon';
+import Sidebar from '../../components/Sidebar';
 
-import '../styles/pages/create-orphanage.css';
-import api from '../services/api';
+import '../../styles/pages/orphanages/create-orphanage.css';
+import api from '../../services/api';
 
 export default function CreateOrphanage () {
 	const history = useHistory();
@@ -90,7 +90,7 @@ export default function CreateOrphanage () {
 									.env.REACT_APP_MAPBOX_TOKEN}`}
 							/>
 
-							{position.latitude != 0 && (
+							{position.latitude !== 0 && (
 								<Marker
 									interactive={false}
 									icon={mapIcon}

@@ -21,15 +21,11 @@ export class createOrphanages1602732972594 implements MigrationInterface {
 					},
 					{
 						name: 'latitude',
-						type: 'decimal',
-						precision: 2,
-						scale: 10,
+						type: 'double precision',
 					},
 					{
 						name: 'longitude',
-						type: 'decimal',
-						precision: 2,
-						scale: 10,
+						type: 'double precision',
 					},
 					{
 						name: 'about',
